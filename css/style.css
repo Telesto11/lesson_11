@@ -1,0 +1,387 @@
+/* @import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* Обнулення */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body{
+	height: 100%;
+}
+body {
+	line-height: 1;
+
+}
+
+/* Шрифт */
+/* @font-face {
+	font-family: "";
+	src: url("../fonts/") format("woff2"), url("../fonts/") format("woff");
+	font-display: ;
+	font-weight: ;
+	font-style: ;
+	}
+  */
+
+/* -- */
+
+body{
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* 
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	padding: 50px;
+}
+ */
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	padding: 50px;
+}
+.header {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+	background: rgb(215, 79, 79);
+	z-index: 100;
+}
+.header__container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+.header__menu {
+	
+}
+.menu {
+	font-size: 0;
+}
+.menu__item {
+	position: relative;
+	display: inline-block;
+}
+.menu__item:not(:last-child){
+	margin-right: 50px;
+}
+.menu__link {
+	font-size: 16px;
+	color: white;
+	padding: 10px 0;
+	display: inline-block;
+}
+.menu__link:hover{
+	background: rgb(67, 54, 183);
+	border-radius: 5px;
+	
+	
+}
+.menu__sub-menu {
+}
+.menu__item:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+.sub-menu {
+	background: green;
+	padding: 10px;
+	position: absolute;
+	top: 130%;
+	border-radius: 5px;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.sub-menu__link:hover{
+	background: rgb(48, 75, 197);
+	display: inline-block;
+	border: solid 2px yellow;
+	border-radius: 5px;
+}
+.sub-menu__item {
+	
+}
+.sub-menu__item:not(:last-child){
+	margin-bottom: 10px;
+}
+.sub-menu__link {
+	font-size: 16px;
+	color: white;
+
+}
+
+
+
+.main {
+	padding: 50px;
+}
+.block{
+	background: url('../img/background.jpg') 0 0 / 100% no-repeat;
+	position: relative;
+	width: 1400px;
+	right: 0;
+	bottom: 0;
+	z-index: 40;
+}
+
+.block__container {
+	max-width: 1230px;
+	height: 800px;
+	margin: 0;
+}
+.block__top{
+	position: relative;
+	bottom: 140px;
+	right: -110px;
+}
+.block__sun{
+	position: absolute;
+	top: 200px;
+	right: 0;
+	background: yellow;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.block__ray-one {
+	background: yellow;
+	position: absolute;
+	top: 140px;
+	right: 100px;
+	height: 30px;
+	width: 5px;
+	border-radius: 50%;
+}
+.block__ray-two {
+	background: yellow;
+	position: absolute;
+	top: 420px;
+	right: 100px;
+	height: 30px;
+	width: 5px;
+	border-radius: 50%;
+
+}
+.block__ray-three {
+	background: yellow;
+	position: absolute;
+	top: 300px;
+	right: 230px;
+	height: 5px;
+	width: 30px;
+	border-radius: 50%;
+
+}
+.block__ray-four {
+	background: yellow;
+	position: absolute;
+	top: 300px;
+	right: -60px;
+	height: 5px;
+	width: 30px;
+	border-radius: 50%;
+
+}
+
+.block__car {
+
+	
+
+}
+.car {
+	position: relative;
+	height: 800px;
+
+	
+
+}
+.car__frame {
+	position: absolute;
+	border-radius: 36% 28% 10% 11% / 35% 41% 3% 11% ;
+	right: 100px;
+	bottom: 20px;
+	background: rgb(241, 100, 6);
+	height: 150px;
+	width: 800px;
+	z-index: 30;
+}
+.car__wheel-right {
+	position: absolute;
+background: #000;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+bottom: -60px;
+right: 100px;
+
+}
+.car__cap-right{
+background: rgb(240, 197, 197);
+width: 90px;
+height: 90px;
+position: absolute;
+border-radius: 50%;
+bottom: 30px;
+right: 30px;
+
+}
+.car__wheels-left {
+	position: absolute;
+	background: #000;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	bottom: -60px;
+	left: 130px;
+	
+}
+.car__cap-left{
+	background: rgb(240, 197, 197);
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	border-radius: 50%;
+	bottom: 30px;
+	right: 30px;
+	
+}
+.car__roof {
+	position: relative;
+	height: 800px;
+	z-index: 29;
+}
+
+
+.car__right {
+	background: rgb(241, 100, 6);
+	height: 270px;	
+	width: 20px;
+	border-radius: 30px;
+
+	position: absolute;
+	right: 250px;
+	bottom: 20px;
+}
+.car__left {
+	background: rgb(241, 100, 6);
+	height: 270px;	
+	width: 20px;
+	border-radius: 30px;
+
+	position: absolute;
+	right: 680px;
+	bottom: 20px;
+}
+.car__top {
+	background: rgb(241, 100, 6);
+	height: 20px;	
+	width: 450px;
+	border-radius: 30px;
+	position: absolute;
+	right: 250px;
+	bottom: 270px;
+}
+.car__center{
+	background: rgb(241, 100, 6);
+	height: 270px;
+	width: 3px;
+	border-radius: 30px;
+	position: absolute;
+	right: 480px;
+	bottom: 20px;
+}
+.car__window {
+position: relative;
+z-index: 28;
+}
+.car__left-window {
+	background: rgb(59, 52, 52);
+	width: 210px;
+	height: 110px;
+	position: absolute;
+	bottom: 165px;
+	right: 483px;
+	opacity: 0.7;
+}
+
+.car__right-window {
+	background: rgb(59, 52, 52);
+	width: 210px;
+	height: 110px;
+	position: absolute;
+	bottom: 165px;
+	right: 270px;
+	opacity: 0.7;
+}
+.car__lights {
+	position: relative;
+	z-index: 26;
+}
+.car__left-lights {
+background: rgb(210, 216, 47);
+width: 50px;
+height: 50px;
+position: absolute;
+bottom: 98px;
+right: 848px;
+}
+.car__right-lights {
+	background: rgb(198, 36, 36);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+position: absolute;
+bottom: 95px;
+right: 100px;
+}
+
+.car__road{
+	background: rgb(71, 62, 62);
+	width: 1400px;
+	height: 50px;
+	position: absolute;
+	bottom: -49px;
+	right: -170px;
+	z-index: 24;
+}
+
